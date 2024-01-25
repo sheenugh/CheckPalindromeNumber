@@ -3,9 +3,9 @@
 def if_palindrome(string_num):
     checking = string_num[::-1]
     if string_num == checking:
-        return True
+        return checking
     else:
-        return False
+        return string_num
 
 # >>>>>>>>>> PSEUDO CODE <<<<<<<<<<
 # ----- ACTUAL CODES -----
@@ -13,9 +13,15 @@ def if_palindrome(string_num):
 given_number1 = "121"
 given_number2 = "125"
 
-# - This section is for the variable 'result' and printing the result
+# - This section is for the variable 'result' and printing a str, especially the result
 print("The original number is", given_number1 + ".")
-print("In addition, the original number is", given_number2 + ".")
+result1 = if_palindrome(given_number1)
+print("Thus, the given number " + str(result1) + " is a palindrome number.")
+
+print("\n")
+print("In addition, the original number is", given_number2 + ".")   
+result2 = if_palindrome(given_number2)
+print("Thus, the given number " + str(result2) + " is not a palindrome number.")
 
 
 
@@ -25,8 +31,4 @@ print("In addition, the original number is", given_number2 + ".")
 
 
 # - Caller of the def function/s
-result1 = if_palindrome(given_number1)
-print("Thus, the given number " + given_number1 + " is a palindrome number.")
 
-result2 = if_palindrome(given_number2)
-print("Thus, the given number " + given_number2 + " is a palindrome number.")
