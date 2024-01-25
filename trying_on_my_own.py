@@ -1,15 +1,17 @@
-# def if_palindrome(var):
-#     checking = var[::-1]
-#     if var == checking:
-#         return True
-#     else:
-#         return False
+# DRAFT 
 
-# result = if_palindrome("121")
-# print(result)
+def if_palindrome(var):
+    checking = var[::-1]
+    if var == checking:
+        return True
+    else:
+        return False
 
-# result2 = if_palindrome("234")
-# print(result2)
+result = if_palindrome("121")
+print(result)
+
+result2 = if_palindrome("234")
+print(result2)
 
 
 s = str(121)
