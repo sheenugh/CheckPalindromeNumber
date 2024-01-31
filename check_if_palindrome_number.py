@@ -3,9 +3,11 @@
 def if_palindrome(string_num):
     checking = string_num[::-1]
     if string_num == checking:
-        return checking
+        print("The given number", string_num, "is a palindrome number.")
+        return 
     else:
-        return string_num
+        print("The given number", string_num, "is not a palindrome number.")
+        return 
 
 # >>>>>>>>>> PSEUDO CODE <<<<<<<<<<
 # ----- ACTUAL CODES -----
@@ -16,12 +18,11 @@ given_number2 = "125"
 # - This section is for the variable 'result' and printing a str, especially the result
 print("The original number is", given_number1 + ".")
 result1 = if_palindrome(given_number1)
-print("Thus, the given number " + str(result1) + " is a palindrome number.")
 
 print("\n")
 print("In addition, the original number is", given_number2 + ".")   
 result2 = if_palindrome(given_number2)
-print("Thus, the given number " + str(result2) + " is not a palindrome number.")
+
 
 
 
